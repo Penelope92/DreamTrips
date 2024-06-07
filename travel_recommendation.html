@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <title>Dream Trips</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 </head>
 <body>
-    <nav class="navbar" style='display:flex; gap: 10px;'>
+    <nav class="navbar">
 
-        <a href="#">Home</a>
-        <a href="#">About us</a>
-        <a href="#">Contact us</a>
-        <form action="search.php" method="get">
-            <input type="text" name="search" maxlength="60" placeholder="Search..." required>
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </nav> 
+        <a class="active" href="./home.html">Home</a>
+        <a href="./about.html">About us</a>
+        <a href="./contact.html">Contact us</a>
+        <div class="search-container">
+            <input type="text" name="search" placeholder="Search..." class="search-input">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>   
+    </nav>
+    <h1>HOME</h1>
 </body>
