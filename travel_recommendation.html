@@ -3,20 +3,50 @@
 <head>
     <title>Dream Trips</title>
     <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body class="site">   
     <nav class="navbar">
-
-        <a class="active" href="./home.html">Home</a>
-        <a href="./about.html">About us</a>
-        <a href="./contact.html">Contact us</a>
-        <div class="search-container">
-            <input type="text" name="search" placeholder="Search..." class="search-input">
-            <a href="#" class="search-btn">
-                <i class="fas fa-search"></i>
-            </a>
-        </div>   
+        <div class="flex-container">
+            <a class="active" href="./travel_recommendation.html">Home</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact us</a>
+            <input type="text" id="searchBar" style="background-color: aliceblue;" placeholder="Search...">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear Results</button> <!-- New button for clearing results -->
+        </div>
     </nav>
-    <h1>HOME</h1>
+    <div class="site-content side-bar">
+        <div id="all-content">
+            <div id="social">
+                <img src="pictures/logos/facebook.png">
+                <img src="pictures/logos/instagram.png">
+                <img src="pictures/logos/youtube.png">
+            </div>
+            <div id="side-text">
+                <h1>
+                    Book the trip of your dreams
+                </h1>
+                <p>
+                    Explore the world effortlessly with Dream Trips. 
+                    Immerse yourself in new experiences, savor diverse cuisines,
+                    and uncover hidden gems. With personalized recommendations 
+                    and seamless booking, your perfect adventure starts here. 
+                    Book now and create unforgettable memories with Dream Trips!
+                </p>
+            </div>
+        </div>
+        <div class="item-container"> 
+            <div class="result-item">
+                <div id="searchResults" class="container"></div>
+            </div>
+        </div>
+    </div>
+    <script id="replace_with_footer" src="footer.js"></script>
+    <script src="travel_recommendation.js">
+        
+    </script>
 </body>
+</html>
